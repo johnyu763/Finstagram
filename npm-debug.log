@@ -1,0 +1,279 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'parse-dashboard' ]
+2 info using npm@2.1.6
+3 info using node@v0.12.0
+4 silly cache add args [ 'parse-dashboard', null ]
+5 verbose cache add spec parse-dashboard
+6 silly cache add parsed spec { raw: 'parse-dashboard',
+6 silly cache add   scope: null,
+6 silly cache add   name: 'parse-dashboard',
+6 silly cache add   rawSpec: '',
+6 silly cache add   spec: '*',
+6 silly cache add   type: 'range' }
+7 verbose addNamed parse-dashboard@*
+8 silly addNamed semver.valid null
+9 silly addNamed semver.validRange *
+10 silly addNameRange { name: 'parse-dashboard', range: '*', hasData: false }
+11 verbose mapToRegistry name parse-dashboard
+12 verbose mapToRegistry uri https://registry.npmjs.org/parse-dashboard
+13 verbose addNameRange registry:https://registry.npmjs.org/parse-dashboard not in flight; fetching
+14 verbose request on initialization, where is /parse-dashboard
+15 verbose request after pass 1, where is /parse-dashboard
+16 verbose request url raw /parse-dashboard
+17 verbose request resolving registry [ 'https://registry.npmjs.org/', './parse-dashboard' ]
+18 verbose request after pass 2, where is https://registry.npmjs.org/parse-dashboard
+19 verbose request no auth needed
+20 info attempt registry request try #1 at 8:51:49 PM
+21 verbose request id d9e132b538dc582b
+22 verbose etag W/"f06afcb7321bd701457c4e9e00e64ccf"
+23 http request GET https://registry.npmjs.org/parse-dashboard
+24 http 304 https://registry.npmjs.org/parse-dashboard
+25 silly registry.get cb [ 304,
+25 silly registry.get   { date: 'Thu, 14 Nov 2019 04:51:49 GMT',
+25 silly registry.get     connection: 'close',
+25 silly registry.get     'set-cookie': [ '__cfduid=d4a0a686ff02cf19d75961b8de75675c21573707109; expires=Fri, 13-Nov-20 04:51:49 GMT; path=/; domain=.npmjs.org; HttpOnly' ],
+25 silly registry.get     'cf-ray': '53565f585b95800e-SAN',
+25 silly registry.get     'cf-cache-status': 'HIT',
+25 silly registry.get     'cache-control': 'max-age=300',
+25 silly registry.get     age: '130',
+25 silly registry.get     etag: '"f06afcb7321bd701457c4e9e00e64ccf"',
+25 silly registry.get     'last-modified': 'Thu, 24 Oct 2019 21:38:29 GMT',
+25 silly registry.get     vary: 'accept-encoding, accept',
+25 silly registry.get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+25 silly registry.get     'x-amz-meta-rev': '65-10aa3c13d1c2b7bb6bb5719658dbaf25',
+25 silly registry.get     server: 'cloudflare' } ]
+26 verbose etag https://registry.npmjs.org/parse-dashboard from cache
+27 silly addNameRange number 2 { name: 'parse-dashboard', range: '*', hasData: true }
+28 silly addNameRange versions [ 'parse-dashboard',
+28 silly addNameRange   [ '0.0.1',
+28 silly addNameRange     '2.0.0',
+28 silly addNameRange     '0.0.2',
+28 silly addNameRange     '0.0.4',
+28 silly addNameRange     '1.0.1',
+28 silly addNameRange     '1.0.2',
+28 silly addNameRange     '1.0.3',
+28 silly addNameRange     '1.0.4',
+28 silly addNameRange     '1.0.5',
+28 silly addNameRange     '1.0.6',
+28 silly addNameRange     '1.0.7',
+28 silly addNameRange     '1.0.8',
+28 silly addNameRange     '1.0.9',
+28 silly addNameRange     '1.0.10',
+28 silly addNameRange     '1.0.11',
+28 silly addNameRange     '1.0.12',
+28 silly addNameRange     '1.0.13',
+28 silly addNameRange     '1.0.14',
+28 silly addNameRange     '1.0.15',
+28 silly addNameRange     '1.0.16',
+28 silly addNameRange     '1.0.17',
+28 silly addNameRange     '1.0.18',
+28 silly addNameRange     '1.0.19',
+28 silly addNameRange     '1.0.20',
+28 silly addNameRange     '1.0.21',
+28 silly addNameRange     '1.0.22',
+28 silly addNameRange     '1.0.23',
+28 silly addNameRange     '1.0.24',
+28 silly addNameRange     '1.0.25',
+28 silly addNameRange     '1.0.26',
+28 silly addNameRange     '1.0.27',
+28 silly addNameRange     '1.0.28',
+28 silly addNameRange     '1.1.0',
+28 silly addNameRange     '1.1.2',
+28 silly addNameRange     '1.2.0',
+28 silly addNameRange     '1.3.0',
+28 silly addNameRange     '1.3.3',
+28 silly addNameRange     '1.4.1',
+28 silly addNameRange     '1.4.2',
+28 silly addNameRange     '1.4.3',
+28 silly addNameRange     '2.0.1',
+28 silly addNameRange     '2.0.2',
+28 silly addNameRange     '2.0.3',
+28 silly addNameRange     '2.0.4',
+28 silly addNameRange     '2.0.5' ] ]
+29 verbose addNamed parse-dashboard@2.0.5
+30 silly addNamed semver.valid 2.0.5
+31 silly addNamed semver.validRange 2.0.5
+32 silly cache afterAdd parse-dashboard@2.0.5
+33 verbose afterAdd /Users/johnyu/.npm/parse-dashboard/2.0.5/package/package.json not in flight; writing
+34 verbose afterAdd /Users/johnyu/.npm/parse-dashboard/2.0.5/package/package.json written
+35 silly install resolved [ { name: 'parse-dashboard',
+35 silly install resolved     parseDashboardFeatures:
+35 silly install resolved      [ 'Data Browser',
+35 silly install resolved        'Cloud Code Viewer',
+35 silly install resolved        'Cloud Code Jobs Viewer and Runner',
+35 silly install resolved        'Parse Config',
+35 silly install resolved        'REST API Console',
+35 silly install resolved        'GraphQL API Console',
+35 silly install resolved        'Class Level Permissions Editor',
+35 silly install resolved        'Pointer Permissions Editor',
+35 silly install resolved        'Send Push Notifications',
+35 silly install resolved        'Logs Viewer',
+35 silly install resolved        'Push Status Page',
+35 silly install resolved        'Relation Editor' ],
+35 silly install resolved     description: 'The Parse Dashboard',
+35 silly install resolved     keywords: [ 'parse', 'dashboard' ],
+35 silly install resolved     homepage: 'https://github.com/ParsePlatform/parse-dashboard',
+35 silly install resolved     bugs: { url: 'https://github.com/ParsePlatform/parse-dashboard/issues' },
+35 silly install resolved     version: '2.0.5',
+35 silly install resolved     repository:
+35 silly install resolved      { type: 'git',
+35 silly install resolved        url: 'git+https://github.com/ParsePlatform/parse-dashboard.git' },
+35 silly install resolved     license: 'SEE LICENSE IN LICENSE',
+35 silly install resolved     dependencies:
+35 silly install resolved      { '@babel/runtime': '7.6.3',
+35 silly install resolved        bcryptjs: '2.3.0',
+35 silly install resolved        'body-parser': '1.19.0',
+35 silly install resolved        'codemirror-graphql': 'github:timsuchanek/codemirror-graphql#details-fix',
+35 silly install resolved        commander: '3.0.2',
+35 silly install resolved        'connect-flash': '0.1.1',
+35 silly install resolved        'cookie-session': '2.0.0-beta.3',
+35 silly install resolved        'copy-to-clipboard': '^3.2.0',
+35 silly install resolved        'create-react-class': '15.6.3',
+35 silly install resolved        csurf: '1.10.0',
+35 silly install resolved        express: '4.17.1',
+35 silly install resolved        graphql: '14.5.8',
+35 silly install resolved        'graphql-playground-react': '1.7.20',
+35 silly install resolved        history: '4.10.1',
+35 silly install resolved        immutable: '4.0.0-rc.9',
+35 silly install resolved        'immutable-devtools': '0.1.3',
+35 silly install resolved        'js-beautify': '1.10.2',
+35 silly install resolved        'json-file-plus': '3.2.0',
+35 silly install resolved        'package-json': '6.5.0',
+35 silly install resolved        parse: '2.8.0',
+35 silly install resolved        passport: '0.4.0',
+35 silly install resolved        'passport-local': '1.0.0',
+35 silly install resolved        prismjs: '1.17.0',
+35 silly install resolved        'prop-types': '15.7.2',
+35 silly install resolved        'query-string': '6.8.3',
+35 silly install resolved        react: '16.10.2',
+35 silly install resolved        'react-dnd': '9.4.0',
+35 silly install resolved        'react-dnd-html5-backend': '9.4.0',
+35 silly install resolved        'react-dom': '16.10.2',
+35 silly install resolved        'react-helmet': '5.2.1',
+35 silly install resolved        'react-redux': '5.1.1',
+35 silly install resolved        'react-router': '5.1.2',
+35 silly install resolved        'react-router-dom': '5.1.2',
+35 silly install resolved        'regenerator-runtime': '0.13.3',
+35 silly install resolved        semver: '6.3.0' },
+35 silly install resolved     devDependencies:
+35 silly install resolved      { '@babel/core': '7.6.4',
+35 silly install resolved        '@babel/plugin-proposal-decorators': '7.6.0',
+35 silly install resolved        '@babel/plugin-transform-regenerator': '7.4.5',
+35 silly install resolved        '@babel/plugin-transform-runtime': '7.6.2',
+35 silly install resolved        '@babel/preset-env': '7.6.3',
+35 silly install resolved        '@babel/preset-react': '7.6.3',
+35 silly install resolved        'babel-eslint': '10.0.3',
+35 silly install resolved        'babel-loader': '8.0.6',
+35 silly install resolved        'babel-plugin-transform-object-rest-spread': '6.26.0',
+35 silly install resolved        'core-js': '3.3.2',
+35 silly install resolved        'cross-env': '6.0.3',
+35 silly install resolved        'css-loader': '3.2.0',
+35 silly install resolved        eslint: '6.5.1',
+35 silly install resolved        'eslint-plugin-jest': '22.19.0',
+35 silly install resolved        'eslint-plugin-react': '7.16.0',
+35 silly install resolved        'file-loader': '4.2.0',
+35 silly install resolved        'http-server': '0.11.1',
+35 silly install resolved        jest: '24.8.0',
+35 silly install resolved        marked: '0.7.0',
+35 silly install resolved        'node-sass': '4.12.0',
+35 silly install resolved        'null-loader': '^3.0.0',
+35 silly install resolved        'parse-server': 'github:parseplatform/parse-server#master',
+35 silly install resolved        'path-to-regexp': '3.1.0',
+35 silly install resolved        puppeteer: '1.20.0',
+35 silly install resolved        'react-test-renderer': '16.10.2',
+35 silly install resolved        request: '2.87.0',
+35 silly install resolved        'request-promise': '4.2.4',
+35 silly install resolved        'sass-loader': '8.0.0',
+35 silly install resolved        'style-loader': '1.0.0',
+35 silly install resolved        'svg-prep': '1.0.4',
+35 silly install resolved        webpack: '4.41.2',
+35 silly install resolved        'webpack-cli': '3.3.9' },
+35 silly install resolved     scripts:
+35 silly install resolved      { dev: 'node ./Parse-Dashboard/index.js & webpack --config webpack/build.config.js --devtool eval-source-map --progress --watch',
+35 silly install resolved        dashboard: 'node ./Parse-Dashboard/index.js & webpack --config webpack/build.config.js --progress --watch',
+35 silly install resolved        pig: 'http-server ./PIG -p 4041 -s & webpack --config webpack/PIG.config.js --progress --watch',
+35 silly install resolved        build: 'cross-env NODE_ENV=production webpack --config webpack/production.config.js && webpack --config webpack/PIG.config.js',
+35 silly install resolved        test: 'cross-env NODE_PATH=./node_modules jest',
+35 silly install resolved        lint: 'eslint . --ignore-path .gitignore --cache',
+35 silly install resolved        pretest: 'npm run lint',
+35 silly install resolved        generate: 'node scripts/generate.js',
+35 silly install resolved        prepare: 'webpack --config webpack/publish.config.js --progress',
+35 silly install resolved        server: 'node server.js',
+35 silly install resolved        start: 'node ./Parse-Dashboard/index.js' },
+35 silly install resolved     bin: { 'parse-dashboard': './bin/parse-dashboard' },
+35 silly install resolved     engines: { node: '>=8.9' },
+35 silly install resolved     main: 'Parse-Dashboard/app.js',
+35 silly install resolved     jest:
+35 silly install resolved      { roots: [Object],
+35 silly install resolved        transform: [Object],
+35 silly install resolved        unmockedModulePathPatterns: [Object] },
+35 silly install resolved     gitHead: '7cc4ba5b7a9b5f0a0d3c4ce72b4dc8af1b50140b',
+35 silly install resolved     _id: 'parse-dashboard@2.0.5',
+35 silly install resolved     _npmVersion: '6.4.1',
+35 silly install resolved     _nodeVersion: '10.14.2',
+35 silly install resolved     _npmUser: { name: 'acinader', email: 'acinader@gmail.com' },
+35 silly install resolved     dist:
+35 silly install resolved      { integrity: 'sha512-D3lfVRf8UN0ezPHRsxYxZpS7y9J5QsmcIfN6pZfj2Jtk7XMHD9yBkMuYR6VmNQHWzWM2b4DCziPMZq/3y8ixeA==',
+35 silly install resolved        shasum: '6b7be750f07bc88d9aec081030424ac71dc9dc53',
+35 silly install resolved        tarball: 'https://registry.npmjs.org/parse-dashboard/-/parse-dashboard-2.0.5.tgz',
+35 silly install resolved        fileCount: 19,
+35 silly install resolved        unpackedSize: 4550532,
+35 silly install resolved        'npm-signature': '-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJdshnSCRA9TVsSAnZWagAAPAwP/0CS1erYj/SJUUXzYeCu\n3rVCjNP8NBEPQqWC9N/sn3rjUi1wyKKneilbAwVFCdVd03w3m9vqyhLNFd00\nlddasCYbGooKHgpw5v6rHLS9fFG8pcPtgtC0mkE6vEbrFI0Lj5QGNZHalTPu\nJaitSUz0LFG1GKZOvO6bdqUo/pRB/61SSpaUZk+teFhIshAFkjR18C/JSMS5\nKlHA3YiITAnqEeJpiE8zElCtrIWi4boIATaxxEj7n5aQelUEX8slqsxWxLVw\n6HOePdflcrDWmeZNHXC69m8/pIbkZ0lwB8GobcZWQJejlmul8T0zsrRXC9tt\nZ8p+kBcqEc8UloOL8TvHnXRjNozLQsNEX/00YQAKU+CqlI4EZ+hdp0qmg1Ft\nm6Xezaatv3rTzLb2Y71sfB5H5Rnle18BqS6zfl9qPNonjKJ61SYTwfo1fHvY\nAlLj/Y6Z5Af5YwVOy+tzoeMZQLwgSIBUxX91GHsiXnF/rTijwN4zJ7vFUwx7\nSqBZvWHQpGs17NWK3z4mYung+TbkpvQCNANS4cQgXvDTsyUaeYkDd8SbGlTg\n3ihYUGsjx/oeigLhIk41x+dUKAtgjOirtnOVf2lAKa5q3vxuLjnkL+VxltO8\nhbJd5GvkC/jj/zPdu+aiOoTFy5icYZRojC/uMLqEAXp0erfx1rxaVLryHrCy\nHPqo\r\n=/yA+\r\n-----END PGP SIGNATURE-----\r\n' },
+35 silly install resolved     maintainers: [ [Object], [Object], [Object], [Object], [Object], [Object] ],
+35 silly install resolved     directories: {},
+35 silly install resolved     _npmOperationalInternal:
+35 silly install resolved      { host: 's3://npm-registry-packages',
+35 silly install resolved        tmp: 'tmp/parse-dashboard_2.0.5_1571953105946_0.9763546216634411' },
+35 silly install resolved     _hasShrinkwrap: false,
+35 silly install resolved     _shasum: '6b7be750f07bc88d9aec081030424ac71dc9dc53',
+35 silly install resolved     _resolved: 'https://registry.npmjs.org/parse-dashboard/-/parse-dashboard-2.0.5.tgz',
+35 silly install resolved     _from: 'parse-dashboard@*',
+35 silly install resolved     readme: 'ERROR: No README data found!' } ]
+36 info install parse-dashboard@2.0.5 into /usr/local/lib
+37 info installOne parse-dashboard@2.0.5
+38 verbose installOne of parse-dashboard to /usr/local/lib not in flight; installing
+39 verbose lock using /Users/johnyu/.npm/_locks/parse-dashboard-40c5840149795b40.lock for /usr/local/lib/node_modules/parse-dashboard
+40 warn engine parse-dashboard@2.0.5: wanted: {"node":">=8.9"} (current: {"node":"0.12.0","npm":"2.1.6"})
+41 silly install write writing parse-dashboard 2.0.5 to /usr/local/lib/node_modules/parse-dashboard
+42 silly cache addNamed cb parse-dashboard@2.0.5
+43 verbose unbuild lib/node_modules/parse-dashboard
+44 verbose gentlyRm vacuuming /usr/local/lib/node_modules/parse-dashboard
+45 verbose tar unpack /Users/johnyu/.npm/parse-dashboard/2.0.5/package.tgz
+46 verbose tar unpacking to /usr/local/lib/node_modules/parse-dashboard
+47 verbose gentlyRm vacuuming /usr/local/lib/node_modules/parse-dashboard
+48 silly gunzTarPerm modes [ '755', '644' ]
+49 verbose fstream_path /usr/local/lib/node_modules/parse-dashboard
+50 verbose fstream_type Directory
+51 verbose fstream_class DirWriter
+52 verbose stack Error: EACCES, mkdir '/usr/local/lib/node_modules/parse-dashboard'
+52 verbose stack     at Error (native)
+53 verbose fstream_stack /usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23
+53 verbose fstream_stack /usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53
+53 verbose fstream_stack FSReqWrap.oncomplete (fs.js:99:15)
+54 verbose cwd /Users/johnyu/Documents/XCodePractice/Finstagram
+55 error Darwin 18.7.0
+56 error argv "node" "/usr/local/bin/npm" "install" "-g" "parse-dashboard"
+57 error node v0.12.0
+58 error npm  v2.1.6
+59 error path /usr/local/lib/node_modules/parse-dashboard
+60 error code EACCES
+61 error errno -13
+62 error Error: EACCES, mkdir '/usr/local/lib/node_modules/parse-dashboard'
+62 error     at Error (native)
+62 error  { [Error: EACCES, mkdir '/usr/local/lib/node_modules/parse-dashboard']
+62 error   errno: -13,
+62 error   code: 'EACCES',
+62 error   path: '/usr/local/lib/node_modules/parse-dashboard',
+62 error   fstream_type: 'Directory',
+62 error   fstream_path: '/usr/local/lib/node_modules/parse-dashboard',
+62 error   fstream_class: 'DirWriter',
+62 error   fstream_stack:
+62 error    [ '/usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23',
+62 error      '/usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53',
+62 error      'FSReqWrap.oncomplete (fs.js:99:15)' ] }
+63 error Please try running this command again as root/Administrator.
+64 verbose exit [ -13, true ]
