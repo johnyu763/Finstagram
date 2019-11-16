@@ -20,6 +20,8 @@
 		FB859944237CF434003B6DC4 /* FinstagramTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB859943237CF434003B6DC4 /* FinstagramTests.swift */; };
 		FB85994F237CF434003B6DC4 /* FinstagramUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB85994E237CF434003B6DC4 /* FinstagramUITests.swift */; };
 		FB892819237F417D008FA5EB /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB892818237F417D008FA5EB /* FeedViewController.swift */; };
+		FB89281B237F4945008FA5EB /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB89281A237F4945008FA5EB /* CameraViewController.swift */; };
+		FB89281D237F53E6008FA5EB /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB89281C237F53E6008FA5EB /* PostCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +66,8 @@
 		FB85994E237CF434003B6DC4 /* FinstagramUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinstagramUITests.swift; sourceTree = "<group>"; };
 		FB859950237CF434003B6DC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FB892818237F417D008FA5EB /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		FB89281A237F4945008FA5EB /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		FB89281C237F53E6008FA5EB /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		FF199B83191AA7041EF29B9C /* Pods_Finstagram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Finstagram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -143,10 +147,12 @@
 		FB85992B237CF432003B6DC4 /* Finstagram */ = {
 			isa = PBXGroup;
 			children = (
+				FB89281A237F4945008FA5EB /* CameraViewController.swift */,
 				FB85992C237CF432003B6DC4 /* AppDelegate.swift */,
 				FB85992E237CF432003B6DC4 /* SceneDelegate.swift */,
 				FB859930237CF432003B6DC4 /* ViewController.swift */,
 				FB859932237CF432003B6DC4 /* Main.storyboard */,
+				FB89281C237F53E6008FA5EB /* PostCell.swift */,
 				FB4EFEAC237E4AD200C79A85 /* LoginViewController.swift */,
 				FB892818237F417D008FA5EB /* FeedViewController.swift */,
 				FB859935237CF434003B6DC4 /* Assets.xcassets */,
@@ -413,11 +419,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB89281D237F53E6008FA5EB /* PostCell.swift in Sources */,
 				FB4EFEAD237E4AD200C79A85 /* LoginViewController.swift in Sources */,
 				FB859931237CF432003B6DC4 /* ViewController.swift in Sources */,
 				FB892819237F417D008FA5EB /* FeedViewController.swift in Sources */,
 				FB85992D237CF432003B6DC4 /* AppDelegate.swift in Sources */,
 				FB85992F237CF432003B6DC4 /* SceneDelegate.swift in Sources */,
+				FB89281B237F4945008FA5EB /* CameraViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
