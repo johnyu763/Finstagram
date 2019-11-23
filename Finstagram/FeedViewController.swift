@@ -33,7 +33,7 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         let post = posts[section]
         let comments = (post["comments"] as? [PFObject]) ?? []
-        return comments.count + 1
+        return comments.count
     }
     func numberOfSections(in tableView: UITableView) -> Int {
         return posts.count
@@ -60,10 +60,13 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         }
         else{
             let cell = tableView.dequeueReusableCell(withIdentifier: "CommentCell") as! CommentCell
-            let comment = comments[indexPath.row - 1]
-            cell.commentLabel.text = comment["text"] as! String
-            let user = comment["author"] as! PFUser
-            cell.nameLabel.text = user.username
+            if(comments != nil){
+                let comment = comments[indexPath.row - 1]
+                cell.commentLabel.text = comment["text"] as! String
+                let user = comment["author"] as! PFUser
+                cell.nameLabel.text = user.username
+            }
+            
             return cell
         }
     }
