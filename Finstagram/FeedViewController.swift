@@ -12,13 +12,18 @@ import AlamofireImage
 import Alamofire
 import MessageInputBar
 
-class FeedViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class FeedViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, MessageInputBarDelegate {
     
     var posts = [PFObject]()
     let commentBar = MessageInputBar()
     var showsCommentBar = false
+    var selectedPost: PFObject!
     
     override func viewDidAppear(_ animated: Bool) {
+    
+        commentBar.inputTextView.placeholder = "Add a comment..."
+        commentBar.sendButton.title = "Post"
+        commentBar.delegate = self
         let query = PFQuery(className: "Posts")
  
         query.includeKeys(["author", "comments", "comments.author"])
@@ -34,6 +39,30 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         tableView.keyboardDismissMode = .interactive
         let center = NotificationCenter.default
         center.addObserver(self, selector: #selector(keyBoardWillBeHidden(note:)), name: UIResponder.keyboardDidHideNotification, object: nil)
+    }
+    func messageInputBar(_ inputBar: MessageInputBar, didPressSendButtonWith text: String) {
+        // Create comment
+        let comment = PFObject(className: "Comments")
+        comment["text"] = text
+        comment["post"] = selectedPost
+        comment["author"] = PFUser.current()!
+
+        selectedPost.add(comment, forKey: "comments")
+
+        selectedPost.saveInBackground{ (success,error) in
+            if(success){
+                print("Comment saved")
+            }
+            else{
+                print("Error: \(String(describing: error))")
+            }
+        }
+        tableView.reloadData()
+        //Clear and dismiss
+        commentBar.inputTextView.text = nil
+        showsCommentBar = false
+        becomeFirstResponder()
+        commentBar.inputTextView.resignFirstResponder()
     }
     @objc func keyBoardWillBeHidden(note: Notification){
         commentBar.inputTextView.text = nil
@@ -63,7 +92,7 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
             let user = post["author"] as! PFUser
             cell.userNameLabel.text = user.username
             
-            cell.captionLabel.text = post["caption"] as! String
+            cell.captionLabel.text = (post["caption"] as! String)
             
             let imageFile = post["image"] as! PFFileObject
             
@@ -93,29 +122,16 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let post = posts[indexPath.row]
-        print("Yes")
         let comments = post["comments"] as? [PFObject] ?? []
         if indexPath.row ==
             comments.count + 1 {
-            print("Hello")
             showsCommentBar = true
             becomeFirstResponder()
         commentBar.inputTextView.becomeFirstResponder()
+            
+            selectedPost = post
         }
-//        comment["text"] = "This is a random comment"
-//        comment["post"] = post
-//        comment["author"] = PFUser.current()!
-//
-//        post.add(comment, forKey: "comments")
-//
-//        post.saveInBackground{ (success,error) in
-//            if(success){
-//                print("Comment saved")
-//            }
-//            else{
-//                print("Error: \(String(describing: error))")
-//            }
-//        }
+
     }
 
     @IBOutlet weak var tableView: UITableView!
